@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<title>define</title>
+<link rel= "shortcut icon" type= "image/x-icon" href= "Logo.jpg"/>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link href="https://fonts.googleapis.com/css?family=Mr+Dafoe&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">"
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+
+body, html {
+  height: 100%;
+  line-height: 1.8;
+  scroll-behavior: smooth;
+}
+
+.w3-bar .w3-button {
+  padding: 16px;
+}
+</style>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-card" id="myNavbar">
+    <a href="#home" class="w3-bar-item w3-button w3-wide"><img src="Logo.jpg" width= "100" height= "30"></a>
+    <!-- Right-sided navbar links -->
+    <div class="w3-right w3-hide-small">
+      <a href="#about" class="w3-bar-item w3-button"><i class="fa fa-user"></i> ABOUT</a>
+      <a href="#team" class="w3-bar-item w3-button"><i class="fa fa-bars"></i> SUBMISSION INFO</a>
+      <a href="#work" class="w3-bar-item w3-button"><i class="fa fa-th"></i> VOLUMES</a>
+      <a href="#contact" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> CONTACT</a>
+    </div>
+    <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+</div>
+
+<!-- Sidebar on small screens when clicking the menu icon -->
+<nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
+  <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT</a>
+  <a href="#team" onclick="w3_close()" class="w3-bar-item w3-button">SUBMISSION INFO</a>
+  <a href="#work" onclick="w3_close()" class="w3-bar-item w3-button">VOLUMES</a>
+  <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button">CONTACT</a>
+</nav>
+
+<!-- Header with full-height image -->
+<div class="jumbotron" style="background-image: url('Home.jpg');background-size: cover; min-height: 100%; text-align: center">
+    <header class="bgimg-1 w3-display-container w3-grayscale-min" id="home"></header>
+    <br /> <br /> <br />
+    <h1 class="display-4" style="font-family: 'Mr Dafoe', cursive">to reach</h1>
+    <br /> <br />
+    <h1 class="display-4" style="font-family: 'Mr Dafoe', cursive">to feel</h1>
+    <br /> <br />
+    <h1 class="display-4" style="font-family: 'Mr Dafoe', cursive">to know</h1>
+    <br /> <br /> <br />
+    <a href="#about" class="w3-bar-item w3-black w3-button">Learn more</a>
+  </div>
+
+<!-- About Section -->
+<div class="w3-container" style="padding:0px 0px" id="about">
+      <div class="w3-quarter">
+    </div>
+<div class="w3-container" style="padding:90px 20px">
+    <div class="w3-row-padding">
+      <div class="w3-col m6">
+        <h3>About Us</h3>
+        <br />
+        <p style="font-size: larger">Define Magazine is a magazine published in JIS, which features the works of students in the areas of art and literature. It is a platform for student's art and literature to be recognized in JIS.</p>
+        <p style="font-size: larger">For each new volume, what we do is choose a unique theme. Once artists and writers have submitted their art/literary work, we compile and layout the images and texts to publish a new define magazine volume. </p>  
+    </div>
+      <div class="w3-col m6">
+        <img class="w3-image w3-round-large" src="Members.jpg" alt="Buildings" width="700" height="394">
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Submission Info Section -->
+<div class="w3-container w3-black" style="padding:128px 16px; text-align: center" id="team">
+    <br /> <br />
+    <h3 class="w3-center" style="color: white">Interested in submitting your art/literary work?</h3>
+  <br /> <br /><br />
+  <p><a href="https://drive.google.com/file/d/1GPK7WxehHXNuWV12K3l5JkTgzi-84PxN/view?usp=sharing" class="w3-button w3-white" style="color: black"><i class="fa fa-th"> </i> More info</a></p>
+</div>
+
+<!-- Volumes Section -->
+<div class="w3-container" style="padding:128px 16px; text-align: center; background-image: url('Volumes.jpg'); background-size: cover; min-height: 100%;" id="work">
+    <br /> <br /><br /><br /> <br /><br />
+  <h3 class="w3-center" style="color:white">See previously published define magazines</h3>
+  <br /> <br /><br />
+  <p><a href="http://online.fliphtml5.com/xpssr/srdz/" class="w3-button w3-black"><i class="fa fa-th"> </i> View Vol.2</a></p>
+  <div class="w3-row-padding" style="margin-top:64px">
+  </div>
+</div>
+
+<!-- Modal for full size images on click-->
+<div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+  <span class="w3-button w3-xxlarge w3-black w3-padding-large w3-display-topright" title="Close Modal Image">×</span>
+  <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+    <img id="img01" class="w3-image">
+    <p id="caption" class="w3-opacity w3-large"></p>
+  </div>
+</div>
+
+<!-- Contact Section -->
+<div class="w3-container w3-light-grey" style="padding:128px 16px" id="contact">
+  <h3 class="w3-center">CONTACT US</h3>
+  <br /><br />
+  <p class="w3-center w3-large">Send us a message:</p>
+  <div style="margin-top:48px; text-align: center">
+    <p><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"> </i> Official define Magazine Email: define@jisedu.or.id</p>
+    <p><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"> </i> Chief Editor Email: 42742@jisedu.or.id (Mira Pratama)</p>
+    <p><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"> </i> Chief Editor Email: 52399@jisedu.or.id (So Jung Shin)</p>
+    <p><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"> </i> Chief Editor Email: 18191@jisedu.or.id (Ashley Soebroto) </p>
+      </p>
+    </form>
+
+<script>
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+// Toggle between showing and hiding the sidebar when clicking the menu icon
+var mySidebar = document.getElementById("mySidebar");
+
+function w3_open() {
+  if (mySidebar.style.display === 'block') {
+    mySidebar.style.display = 'none';
+  } else {
+    mySidebar.style.display = 'block';
+  }
+}
+
+// Close the sidebar with the close button
+function w3_close() {
+    mySidebar.style.display = "none";
+}
+</script>
+</body>
+</html>
